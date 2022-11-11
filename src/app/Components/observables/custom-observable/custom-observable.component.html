@@ -1,3 +1,38 @@
 <div class="container mt-3">
     <h2>Custom Observable</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex -01 (Manual)</strong>
+            <hr>
+            <ul [ngClass]="techStatus=='completed'?'completed':techStatus=='error'?'error':''" class="techList" id="elContainer">
+                
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <strong>Ex -02 (Custom Interval Observable)</strong>
+            <hr>
+            <ul class="techList completed">
+                <li>Angular</li>
+                <li>Angular</li>
+                <li>Angular</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <strong>Ex -03 (Random Name)</strong>
+            <p class="bg-light px-3 py-3 border rounded">
+                <strong>Data: </strong>'Angular','React','Java','Html','CSS'
+            </p>
+            <hr>
+            <p>Current Name: <strong class="text-success">Deependra</strong></p>
+            <span class="badge bg-success">Success</span>
+        </div>
+        
+
+
+    </div>
 </div>
