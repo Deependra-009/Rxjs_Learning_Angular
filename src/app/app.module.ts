@@ -10,6 +10,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { AllComponent } from './Components/observables/all/all.component';
 import { EventComponent } from './Components/observables/event/event.component';
 import { IntervalComponent } from './Components/observables/interval/interval.component';
+import { OfFromComponent } from './Components/observables/of-from/of-from.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { IntervalComponent } from './Components/observables/interval/interval.co
     HomeComponent,
     AllComponent,
     EventComponent,
-    IntervalComponent
+    IntervalComponent,
+    OfFromComponent
   ],
   imports: [
     BrowserModule,
