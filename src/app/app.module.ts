@@ -11,6 +11,8 @@ import { AllComponent } from './Components/observables/all/all.component';
 import { EventComponent } from './Components/observables/event/event.component';
 import { IntervalComponent } from './Components/observables/interval/interval.component';
 import { OfFromComponent } from './Components/observables/of-from/of-from.component';
+import { ToArrayComponent } from './Components/observables/to-array/to-array.component';
+import { CustomObservableComponent } from './Components/observables/custom-observable/custom-observable.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { OfFromComponent } from './Components/observables/of-from/of-from.compon
     AllComponent,
     EventComponent,
     IntervalComponent,
-    OfFromComponent
+    OfFromComponent,
+    ToArrayComponent,
+    CustomObservableComponent
   ],
   imports: [
     BrowserModule,
