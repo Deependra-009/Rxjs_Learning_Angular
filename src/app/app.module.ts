@@ -13,6 +13,9 @@ import { IntervalComponent } from './Components/observables/interval/interval.co
 import { OfFromComponent } from './Components/observables/of-from/of-from.component';
 import { ToArrayComponent } from './Components/observables/to-array/to-array.component';
 import { CustomObservableComponent } from './Components/observables/custom-observable/custom-observable.component';
+import { MapComponent } from './Components/observables/map/map.component';
+import { PluckComponent } from './Components/observables/pluck/pluck.component';
+import { FilterComponent } from './Components/observables/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { CustomObservableComponent } from './Components/observables/custom-obser
     IntervalComponent,
     OfFromComponent,
     ToArrayComponent,
-    CustomObservableComponent
+    CustomObservableComponent,
+    MapComponent,
+    PluckComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
