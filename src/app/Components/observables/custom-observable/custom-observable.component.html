@@ -12,11 +12,7 @@
         <div class="col-md-6">
             <strong>Ex -02 (Custom Interval Observable)</strong>
             <hr>
-            <ul class="techList completed">
-                <li>Angular</li>
-                <li>Angular</li>
-                <li>Angular</li>
-            </ul>
+            <ul [ngClass]="techStatus1=='completed'?'completed':techStatus1=='error'?'error':''" class="techList " id="elContainer2"></ul>
         </div>
     </div>
     <br>
@@ -28,8 +24,8 @@
                 <strong>Data: </strong>'Angular','React','Java','Html','CSS'
             </p>
             <hr>
-            <p>Current Name: <strong class="text-success">Deependra</strong></p>
-            <span class="badge bg-success">Success</span>
+            <p>Current Name: <strong>{{name}}</strong></p>
+            <span [ngClass]="techStatus2=='completed'?'bg-success':techStatus2=='error'?'bg-danger':'bg-primary'" class="badge ">{{this.techStatus2=="completed"?"Completed":(this.techStatus2=="error"?"Error":"Running")}}</span>
         </div>
         
 
