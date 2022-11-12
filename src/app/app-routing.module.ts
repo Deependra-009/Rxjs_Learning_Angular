@@ -11,6 +11,7 @@ import { MapComponent } from './Components/observables/map/map.component';
 import { ObservablesComponent } from './Components/observables/observables.component';
 import { OfFromComponent } from './Components/observables/of-from/of-from.component';
 import { PluckComponent } from './Components/observables/pluck/pluck.component';
+import { TapComponent } from './Components/observables/tap/tap.component';
 import { ToArrayComponent } from './Components/observables/to-array/to-array.component';
 import { PromisesComponent } from './Components/promises/promises.component';
 
@@ -62,6 +63,10 @@ const routes: Routes = [
       {
         path:'filter',
         component:FilterComponent,
+      },
+      {
+        path:'tap',
+        component:TapComponent,
       }
     ]
   }
