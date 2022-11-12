@@ -11,6 +11,8 @@ import { MapComponent } from './Components/observables/map/map.component';
 import { ObservablesComponent } from './Components/observables/observables.component';
 import { OfFromComponent } from './Components/observables/of-from/of-from.component';
 import { PluckComponent } from './Components/observables/pluck/pluck.component';
+import { RetryComponent } from './Components/observables/retry/retry.component';
+import { TakeComponent } from './Components/observables/take/take.component';
 import { TapComponent } from './Components/observables/tap/tap.component';
 import { ToArrayComponent } from './Components/observables/to-array/to-array.component';
 import { PromisesComponent } from './Components/promises/promises.component';
@@ -67,6 +69,14 @@ const routes: Routes = [
       {
         path:'tap',
         component:TapComponent,
+      },
+      {
+        path:'take',
+        component:TakeComponent
+      },
+      {
+        path:'retry',
+        component:RetryComponent
       }
     ]
   }
