@@ -21,6 +21,16 @@ import { TakeComponent } from './Components/observables/take/take.component';
 import { RetryComponent } from './Components/observables/retry/retry.component';
 import { DebounceTimeDistinctUntilChangeComponent } from './Components/observables/debounce-time-distinct-until-change/debounce-time-distinct-until-change.component';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { SubjectComponent } from './Components/observables/subject/subject.component';
+import { Comp1Component } from './Components/comp/comp1/comp1.component';
+import { Comp2Component } from './Components/comp/comp2/comp2.component';
+import { Comp3Component } from './Components/comp/comp3/comp3.component';
+import { ReplaySubjectComponent } from './Components/observables/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './Components/observables/async-subject/async-subject.component';
+import { ConcatComponent } from './Components/observables/concat/concat.component';
+import { MergeComponent } from './Components/observables/merge/merge.component';
+import { MergeMapComponent } from './Components/observables/merge-map/merge-map.component';
+import { ConcatMapComponent } from './Components/observables/concat-map/concat-map.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +51,17 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     TapComponent,
     TakeComponent,
     RetryComponent,
-    DebounceTimeDistinctUntilChangeComponent
+    DebounceTimeDistinctUntilChangeComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    ReplaySubjectComponent,
+    AsyncSubjectComponent,
+    ConcatComponent,
+    MergeComponent,
+    MergeMapComponent,
+    ConcatMapComponent
   ],
   imports: [
     BrowserModule,

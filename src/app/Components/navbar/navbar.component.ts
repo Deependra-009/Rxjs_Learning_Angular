@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesignUtilityService } from 'src/app/Services/design-utility.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  exclusive:boolean=false;
+
+  constructor(
+    private _du:DesignUtilityService
+  ) { }
 
   ngOnInit(): void {
+    this._du.exclusive.subscribe(res=>{
+      this.exclusive=res;
+    })
   }
 
 }
