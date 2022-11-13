@@ -21,6 +21,7 @@ import { PluckComponent } from './Components/observables/pluck/pluck.component';
 import { ReplaySubjectComponent } from './Components/observables/replay-subject/replay-subject.component';
 import { RetryComponent } from './Components/observables/retry/retry.component';
 import { SubjectComponent } from './Components/observables/subject/subject.component';
+import { SwitchMapSearchComponent } from './Components/observables/switch-map-search/switch-map-search.component';
 import { SwitchMapComponent } from './Components/observables/switch-map/switch-map.component';
 import { TakeComponent } from './Components/observables/take/take.component';
 import { TapComponent } from './Components/observables/tap/tap.component';
@@ -40,6 +41,10 @@ const routes: Routes = [
     path:'observables',
     component:ObservablesComponent,
     children:[
+      {
+        path:'switch-map-search',
+        component:SwitchMapSearchComponent
+      },
       {
         path:'',
         component:AllComponent

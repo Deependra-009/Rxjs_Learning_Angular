@@ -32,6 +32,8 @@ import { MergeComponent } from './Components/observables/merge/merge.component';
 import { MergeMapComponent } from './Components/observables/merge-map/merge-map.component';
 import { ConcatMapComponent } from './Components/observables/concat-map/concat-map.component';
 import { SwitchMapComponent } from './Components/observables/switch-map/switch-map.component';
+import { SwitchMapSearchComponent } from './Components/observables/switch-map-search/switch-map-search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -63,13 +65,15 @@ import { SwitchMapComponent } from './Components/observables/switch-map/switch-m
     MergeComponent,
     MergeMapComponent,
     ConcatMapComponent,
-    SwitchMapComponent
+    SwitchMapComponent,
+    SwitchMapSearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarModule
+    LoadingBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
