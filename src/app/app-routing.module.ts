@@ -10,6 +10,7 @@ import { ConcatComponent } from './Components/observables/concat/concat.componen
 import { CustomObservableComponent } from './Components/observables/custom-observable/custom-observable.component';
 import { DebounceTimeDistinctUntilChangeComponent } from './Components/observables/debounce-time-distinct-until-change/debounce-time-distinct-until-change.component';
 import { EventComponent } from './Components/observables/event/event.component';
+import { ExhaustMapComponent } from './Components/observables/exhaust-map/exhaust-map.component';
 import { FilterComponent } from './Components/observables/filter/filter.component';
 import { IntervalComponent } from './Components/observables/interval/interval.component';
 import { MapComponent } from './Components/observables/map/map.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
     path:'observables',
     component:ObservablesComponent,
     children:[
+      {
+        path:'exhaust-map',
+        component:ExhaustMapComponent
+      },
       {
         path:'switch-map-search',
         component:SwitchMapSearchComponent
