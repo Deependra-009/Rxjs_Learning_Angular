@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
@@ -19,6 +19,8 @@ import { FilterComponent } from './Components/observables/filter/filter.componen
 import { TapComponent } from './Components/observables/tap/tap.component';
 import { TakeComponent } from './Components/observables/take/take.component';
 import { RetryComponent } from './Components/observables/retry/retry.component';
+import { DebounceTimeDistinctUntilChangeComponent } from './Components/observables/debounce-time-distinct-until-change/debounce-time-distinct-until-change.component';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
 
 @NgModule({
   declarations: [
@@ -38,11 +40,14 @@ import { RetryComponent } from './Components/observables/retry/retry.component';
     FilterComponent,
     TapComponent,
     TakeComponent,
-    RetryComponent
+    RetryComponent,
+    DebounceTimeDistinctUntilChangeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    LoadingBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

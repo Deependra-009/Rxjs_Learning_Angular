@@ -1,0 +1,42 @@
+<ngx-loading-bar></ngx-loading-bar>
+<div class="container mt-3">
+    <h2>DebounceTime & DistinctUntilChange</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light px-3 py-3 border rounded">
+                <strong>Ex-01 </strong>Debounce Time
+            </p>
+            <hr>
+            <div class="mb-3">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label class="col-form-label">Search</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" #myInput placeholder="Search..."
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+            </div>
+            <span *ngIf="reqData!=null">Requested Data: <strong class="text-success">{{reqData}}</strong></span>
+        </div>
+        <div class="col-md-6">
+            <p class="bg-light px-3 py-3 border rounded">
+                <strong>Ex-02 </strong>DistinctUntilChange
+            </p>
+            <hr>
+            <div class="mb-3">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label class="col-form-label">Search</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" #myInput2 placeholder="Search..."
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+            </div>
+            <span *ngIf="reqData2!=null">Requested Data: <strong class="text-success">{{reqData2}}</strong></span>
+        </div>
+    </div>

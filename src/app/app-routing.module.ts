@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AllComponent } from './Components/observables/all/all.component';
 import { CustomObservableComponent } from './Components/observables/custom-observable/custom-observable.component';
+import { DebounceTimeDistinctUntilChangeComponent } from './Components/observables/debounce-time-distinct-until-change/debounce-time-distinct-until-change.component';
 import { EventComponent } from './Components/observables/event/event.component';
 import { FilterComponent } from './Components/observables/filter/filter.component';
 import { IntervalComponent } from './Components/observables/interval/interval.component';
@@ -77,6 +78,10 @@ const routes: Routes = [
       {
         path:'retry',
         component:RetryComponent
+      },
+      {
+        path:'debounce-time-distinct-until-change',
+        component:DebounceTimeDistinctUntilChangeComponent
       }
     ]
   }
