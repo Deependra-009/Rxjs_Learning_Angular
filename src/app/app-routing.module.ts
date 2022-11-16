@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AllComponent } from './Components/observables/all/all.component';
 import { AsyncSubjectComponent } from './Components/observables/async-subject/async-subject.component';
+import { CatcherrorThrowerrorComponent } from './Components/observables/catcherror-throwerror/catcherror-throwerror.component';
+import { CombineLatestWithLatestFormComponent } from './Components/observables/combine-latest-with-latest-form/combine-latest-with-latest-form.component';
 import { ConcatMapComponent } from './Components/observables/concat-map/concat-map.component';
 import { ConcatComponent } from './Components/observables/concat/concat.component';
 import { CustomObservableComponent } from './Components/observables/custom-observable/custom-observable.component';
@@ -21,12 +23,14 @@ import { OfFromComponent } from './Components/observables/of-from/of-from.compon
 import { PluckComponent } from './Components/observables/pluck/pluck.component';
 import { ReplaySubjectComponent } from './Components/observables/replay-subject/replay-subject.component';
 import { RetryComponent } from './Components/observables/retry/retry.component';
+import { ShareReplayComponent } from './Components/observables/share-replay/share-replay.component';
 import { SubjectComponent } from './Components/observables/subject/subject.component';
 import { SwitchMapSearchComponent } from './Components/observables/switch-map-search/switch-map-search.component';
 import { SwitchMapComponent } from './Components/observables/switch-map/switch-map.component';
 import { TakeComponent } from './Components/observables/take/take.component';
 import { TapComponent } from './Components/observables/tap/tap.component';
 import { ToArrayComponent } from './Components/observables/to-array/to-array.component';
+import { ZipAndForkJoinComponent } from './Components/observables/zip-and-fork-join/zip-and-fork-join.component';
 import { PromisesComponent } from './Components/promises/promises.component';
 
 const routes: Routes = [
@@ -42,6 +46,10 @@ const routes: Routes = [
     path:'observables',
     component:ObservablesComponent,
     children:[
+      {
+        path:'combine-latest',
+        component:CombineLatestWithLatestFormComponent
+      },
       {
         path:'exhaust-map',
         component:ExhaustMapComponent
@@ -133,6 +141,18 @@ const routes: Routes = [
       {
         path:'switch-map',
         component:SwitchMapComponent
+      },
+      {
+        path:'share-replay',
+        component:ShareReplayComponent
+      },
+      {
+        path:'zip-forkjoin',
+        component:ZipAndForkJoinComponent
+      },
+      {
+        path:'catcherror-throwerror',
+        component:CatcherrorThrowerrorComponent
       }
     ]
   }

@@ -1,0 +1,59 @@
+<div class="container mt-30">
+    <h3>Share Replay</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Products: <span class="text-primary">Laptop</span></h5>
+            <hr>
+            <div class="card" style="width: 18rem;">
+                <img class="align-self-center p-2 d-flex justify-content-center" width="100" src="https://firebasestorage.googleapis.com/v0/b/shopping-images.appspot.com/o/Images%2FMobiles%2Fasusrog5.jpeg?alt=media&token=fa5dcede-3020-45cd-9ca6-ceae70751d9a" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laptop-Dell</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <p class="text-primary">Price: 45000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+            <h5>Products: <span class="text-warning">Laptop</span></h5>
+            <hr>
+            <div class="card" style="width: 18rem;">
+                <img class="align-self-center p-2 d-flex justify-content-center" width="100" src="https://firebasestorage.googleapis.com/v0/b/shopping-images.appspot.com/o/Images%2FMobiles%2Fasusrog5.jpeg?alt=media&token=fa5dcede-3020-45cd-9ca6-ceae70751d9a" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laptop-Dell</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <p class="text-primary">Price: 45000</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="text-success">All Product</h5>
+            <hr>
+            <div class="style-div">
+                <div class="card mat-style-card" style="width: 18rem;" *ngFor="let item of ShoppingData">
+                    <img class="mat-card-img align-self-center p-2 d-flex justify-content-center" width="100" [src]="item.image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name}}</h5>
+                      <p class="card-text">{{item.list[0].l}}</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary">Price: {{item.price}}</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>

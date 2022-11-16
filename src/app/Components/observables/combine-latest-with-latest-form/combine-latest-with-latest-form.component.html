@@ -1,0 +1,49 @@
+<div class="container">
+    <h3>CombineLatest & withLatestForm</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <h4>Name</h4>
+                <hr>
+                <select #name class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option *ngFor="let item of Names" [value]="item">{{item}}</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h4>CombineLatest</h4>
+                <hr>
+                <div class="d-flex justify-content-around">
+                    <button class="btn w-25" [ngStyle]="{'background-color':targetcolor}">{{targetName}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <h4>Name</h4>
+                <hr>
+                <select #color class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option *ngFor="let item of Color" [value]="item">{{item}}</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h4>CombineLatest</h4>
+                <hr>
+                <div class="d-flex justify-content-around">
+                    <button class="btn w-25" [ngStyle]="{'background-color':targetcolor1}">{{targetName1}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

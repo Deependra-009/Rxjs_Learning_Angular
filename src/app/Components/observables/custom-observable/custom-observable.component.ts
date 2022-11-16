@@ -67,8 +67,8 @@ export class CustomObservableComponent implements OnInit,OnDestroy {
           // observer.error("error limit");          
         }
         else if(count==3){
-          // observer.complete();
-          observer.error();
+          observer.complete();
+          // observer.error();
         }
         count++;
       },1000);

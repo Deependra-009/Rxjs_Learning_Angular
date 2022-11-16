@@ -1,0 +1,34 @@
+<div class="container mt-20">
+    <h3>CatchError & ThrowError</h3>
+    <br>
+    <div *ngIf="error!=null" class="alert alert-danger" role="alert">
+        {{error}}
+    </div>
+    <br>
+    <h5>Product : Laptop</h5>
+    <hr>
+    <button (click)="getData()" class="btn btn-primary">Get Product</button>
+    <br>
+    <div class="row" *ngIf="loadData">
+        <div class="col-md-12">
+            <h5 class="text-success">All Product</h5>
+            <hr>
+            <div class="style-div">
+                <div class="card mat-style-card" style="width: 18rem;" *ngFor="let item of ShoppingData">
+                    <img class="mat-card-img align-self-center p-2 d-flex justify-content-center" width="100" [src]="item.image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name}}</h5>
+                      <p class="card-text">{{item.list[0].l}}</p>
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary">Price: {{item.price}}</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>

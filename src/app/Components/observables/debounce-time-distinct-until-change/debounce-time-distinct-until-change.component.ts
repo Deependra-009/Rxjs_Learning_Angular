@@ -53,7 +53,7 @@ export class DebounceTimeDistinctUntilChangeComponent implements OnInit,AfterVie
     const searchTerm2=fromEvent(this.myInput2.nativeElement,'keyup')
     .pipe(
       map((event:any)=>(event.target.value)),
-      debounceTime(500),
+      debounceTime(2000),
       distinctUntilChanged()
     );
 
